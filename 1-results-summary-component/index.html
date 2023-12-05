@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Results summary component</title>
+  </style>
+</head>
+<body>
+<main class="main container flex">
+  
+  <div class="results-box | flow info-box flex flex-dir-col bg-gradient-1 text-center">
+    <h1 class="text-neutral-300 fw-700 fs-500">Your Result</h1>
+    <p class="total-ranking | bg-gradient-2 text-neutral-300"><span class="fs-800 fw-800 text-neutral-100">76</span>of 100</p>
+    <div>
+      <h2 class="fs-700 padding-bottom--small">Great</h2>
+      <p class="text-neutral-300">You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+  </div>
+
+  <div class="summary-box | bg-neutral-100 info-box flex flex-dir-col">
+    <h1 class="text-neutral-400 fs-400 fw-700">Summary</h1>
+    <div class="info-box--small | flex bg-accent-red">
+      <div class="flex">
+        <img src="assets/images/icon-reaction.svg" alt="Icon Lightning Bolt">
+        <h2 class="text-accent-red">Reaction</h2>
+      </div>
+      <p class="text-neutral-400 fw-700">80 <span class="margin-left--small text-neutral-350"> / 100</span></p>
+    </div>
+    <div class="info-box--small | flex bg-accent-yellow">
+      <div class="flex">
+        <img src="assets/images/icon-memory.svg" alt="Icon Brain">
+        <h2 class="text-accent-yellow">Memory</h2>
+      </div>
+      <p class="text-neutral-400 fw-700">92 <span class="margin-left--small text-neutral-350">/ 100</span></p>
+    </div>
+    <div class="info-box--small | flex bg-accent-green">
+      <div class="flex">
+        <img src="assets/images/icon-verbal.svg" alt="Icon Bubble Message">
+        <h2 class="text-accent-green">Verbal</h2>
+      </div>
+      <p class="text-neutral-400 fw-700">61 <span class="margin-left--small text-neutral-350">/ 100</span></p>
+    </div>
+    <div class="info-box--small | flex bg-accent-blue">
+      <div class="flex">
+        <img src="assets/images/icon-visual.svg" alt="Icon Eye">
+        <h2 class="text-accent-blue">Visual</h2>
+      </div>
+      <p class="text-neutral-400 fw-700">72 <span class="margin-left--small text-neutral-350">/ 100</span></p>
+    </div>
+
+    <button class="button--primary">Continue</button>
+</main>
+</body>
+</html>

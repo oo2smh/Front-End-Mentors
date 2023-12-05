@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <title>Frontend Mentor | News homepage</title>
+
+  
+</head>
+<body >
+<header class="header container flex justify-between">
+  <h1 aria-label="W. Logo News Company"><img src="assets/images/logo.svg" alt="W. Logo"></h1>
+  <button class="mobile-nav-toggle flex flex-col justify-center" aria-controls="primary-nav" data-open="false"><span class="block hamburger-bar"></span></button>
+  <nav class="nav">
+    <ul id="primary-nav" class="primary-nav flex flex-col" data-visible="false" aria-expanded="false">
+      <li>Home</li>
+      <li>New</li>
+      <li>Popular</li>
+      <li>Trending</li>
+      <li>Categories</li>
+    </ul>
+  </nav>
+</header>
+
+<main class="main container grid">
+  <article class="headline | grid section">
+    <picture>
+      <source srcset="assets/images/image-web-3-desktop.jpg" media="(min-width: 45rem)">
+      <img src="assets/images/image-web-3-mobile.jpg" alt="Colored Blocks Overlayed On Top of Each Other">
+    </picture>
+    <h2 class="headline__title fs-900 fw-800 text-neutral-400 line-height-1">The Bright Future of Web 3.0?</h2>
+    <div class="headline__content flex flex-col">
+      <p>
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+        But is it really fulfilling its promise?
+      </p>
+      <button class="bg-accent-red button-primary uppercase letter-spacing-1">Read more</button>
+    </div>
+  </article>
+  
+  <section class="new grid container section bg-neutral-400">
+    <h2 class="text-accent-orange fw-700 fs-900">New</h2>
+    <div class="card flex flex-col">
+      <h3 class="fs-750 fw-700 text-neutral-100">Hydrogen VS Electric Cars</h3>
+      <p class="text-neutral-200">Will hydrogen-fueled cars ever catch up to EVs?</p>
+    </div>
+    <div class="card flex flex-col">
+      <h3 class="fs-750 fw-700 text-neutral-100">The Downsides of AI Artistry</h3>
+      <p class="text-neutral-200">What are the possible adverse effects of on-demand AI image generation?</p>
+    </div>
+    <div class="card flex flex-col">
+      <h3 class="fs-750 fw-700 text-neutral-100">Is VC Funding Drying Up?</h3>
+      <p class="text-neutral-200">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </div>
+  </section>
+  
+  <section class="popular grid container section">
+    <div class="popular__card flex">
+      <div class="popular__img-box flex"><img src="assets/images/image-retro-pcs.jpg" alt=""></div>
+      <div class="popular__text | flex flex-col">
+        <p class="fs-800 text-neutral-250 fw-700">01</p>
+        <h2 class="text-neutral-400 fw-700 fs-750">Reviving Retro PCs</h2>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div class="popular__card flex">
+      <div class="popular__img-box flex"><img src="assets/images/image-top-laptops.jpg" alt=""></div>
+      <div class="popular__text | flex flex-col">
+        <p class="fs-800 text-neutral-250 fw-700">02</p>
+        <h2 class="text-neutral-400 fw-700 fs-750">Top 10 Laptops of 2022</h2>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    <div class="popular__card flex">
+      <div class="popular__img-box flex"><img src="assets/images/image-gaming-growth.jpg" alt=""></div>
+      <div class="popular__text | flex flex-col">
+        <p class="fs-800 text-neutral-250 fw-700">03</p>
+        <h2 class="text-neutral-400 fw-700 fs-750">The Growth of Gaming</h2>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </section>
+
+</main>  
+</body>
+</html>

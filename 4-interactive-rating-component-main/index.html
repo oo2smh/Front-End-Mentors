@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+  <main class="flex items-center">
+    <!-- Rating state start -->
+    <aside class="rating | flow container items-center" data-visible="true">
+      <div class="icon-box | round-border flex items-center justify-center"><img src="images/icon-star.svg" alt="icon star"></div>
+      <div class="rating__text">
+        <h1 class="text-neutral-100 fs-800 fw-700">How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!
+        </p>
+      </div>
+      <form action="#">
+        <ul class="rating-scale flex justify-center">
+          <li><button class="round-border">1</button></li>
+          <li><button class="round-border">2</button></li>
+          <li><button class="round-border">3</button></li>
+          <li><button class="round-border">4</button></li>
+          <li><button class="round-border">5</button></li>
+        </ul>
+      </form>
+      <button class="btn-submit | uppercase">Submit</button>
+    </aside>
+    <!-- Rating state end -->
+    <!-- Thank you state start -->
+    <aside class="confirmation | flow text-center container" data-visible='false'>
+      <div class="flex justify-center"><img src="images/illustration-thank-you.svg" alt="atm machine with receipts"></div>
+      <p class="selection-box | text-primary-light bg-neutral-400 text-center">You selected <span class="user-rating"></span> out of 5</p>
+    <div class="confirmation__text">
+        <h1 class="text-neutral-100 fs-800 fw-700">Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!
+        </p>
+    </div>
+    </aside>
+  </main>
+
+</body>
+</html>

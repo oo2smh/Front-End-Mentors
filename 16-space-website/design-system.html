@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Tourism Design System </title>
+  <link rel="stylesheet" href="design-system.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&family=Barlow:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+</head>
+<body class="container">
+  <div style="margin-top: 3rem; margin-left: 3rem;">
+    <a href="#" class="large-button text-dark bg-light ff-serif fs-600 uppercase">Explore</a>
+  </div>
+
+ <nav>
+  <ul class="primary-navigation underline-indicators flex">
+    <li class="active"><a href="#" class="uppercase letter-spacing-1 text-light"><span>01</span>Active</a></li>
+    <li><a href="#" class="uppercase letter-spacing-1 text-light"><span>02</span>Hover</a></li>
+    <li><a href="#" class="uppercase letter-spacing-1 text-light"><span>03</span>Idle</a></li>
+  </ul>
+ </nav>
+
+<!-- tabbed list -->
+ <div class="tab-list underline-indicators flex">
+  <button aria-selected="true" class="ff-sans-cond bg-dark text-accent uppercase letter-spacing-2 text-light">Moon</button>
+  <button aria-selected="false" class="ff-sans-cond bg-dark text-accent uppercase letter-spacing-2 text-light">Mars</button>
+  <button aria-selected="false" class="ff-sans-cond bg-dark text-accent uppercase letter-spacing-2 text-light">Europa</button>
+ </div>
+
+ <!-- dot indicators -->
+ <div class="dot-indicators | flex">
+  <button aria-selected="true"><span class="sr-only">Tab title</span></button>
+  <button aria-selected="false"><span class="sr-only">Tab title</span></button>
+  <button aria-selected="false"><span class="sr-only">Tab title</span></button>
+ </div>
+
+ <!-- number indicators -->
+ <div class="number-indicators | flex">
+  <button aria-selected="true" class="ff-serif fs-500  text-light bg-dark"><span class="sr-only">Tab title</span>1</button>
+  <button aria-selected="false" class="ff-serif fs-500 text-light bg-dark"><span class="sr-only">Tab title</span>2</button>
+  <button aria-selected="false" class="ff-serif fs-500 text-light bg-dark"><span class="sr-only">Tab title</span>3</button>
+ </div>
+
+
+</body>
+</html>

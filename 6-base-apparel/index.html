@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <script src="index.js" defer></script>
+</head>
+<body class="grid-lg grid">
+
+  <header class="header"><img src="images/logo.svg" alt="Base Apparel Logo"></header>
+
+  <picture class="picture flex flex-col gap-0">
+    <source srcset="images/hero-desktop.jpg" media="(min-width: 550px)">
+    <img src="images/hero-mobile.jpg" alt="woman rocking an orange shirt in a photoshoot">
+  </picture>
+
+  <div class="hero grid justify-center container-lg text-center">
+      <h1 class="fs-900 fw-400 uppercase letter-spacing-1"><span class="text-primary-brown fw-300 d-block">We're</span> coming <br> soon</h1>
+      <p class="mx-40 text-primary-brown">
+        Hello fellow shoppers! We're currently building our new fashion store.
+        Add your email below to stay up-to-date with announcements and our launch deals.
+      </p>
+      
+    <form class="form" action="#">
+      <div class="form-control">
+        <input pattern="[a-zA-B0-9._-+]+@[a-zA-B0-9-]+\." name="email" id="email" class="input--email" type="email" placeholder="Email Address">
+        </input>
+        <img class="icon-error hidden" src="images/icon-error.svg" alt="error-icon">
+        <button class="btn--submit | grid place-center"><img src="images/icon-arrow.svg" alt="icon-arrow"></button>
+        <small class="error-message hidden">Error. Please try again!</small>
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

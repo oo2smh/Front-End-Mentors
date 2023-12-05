@@ -1,0 +1,221 @@
+/* || CUSTOM PROPERTIES */
+:root {
+  /* -- Colors */
+  --clr-accent-red: 0 100% 67%;
+  --clr-accent-yellow: 39 100% 56%;
+  --clr-accent-green: 166 100% 37%;
+  --clr-accent-blue: 234 85% 45%;
+
+  --clr-gradient-blue-1a: 253 100% 67%;
+  --clr-gradient-blue-1b: 241 81% 54%;  
+  --clr-gradient-blue-2a: 256 72% 46%;
+  --clr-gradient-blue-2b: 241 72% 46%;
+
+  --clr-neutral-100: 0 0% 100%;
+  --clr-neutral-200: 221 100% 96%;
+  --clr-neutral-300: 210 10% 80%;
+  --clr-neutral-350: 220 15% 60%;
+  --clr-neutral-400: 224 10% 35%;
+
+  /* --Typography */
+  --fs-400: 1.25rem;
+  --fs-500: 1.5rem; 
+  --fs-800: 4rem;
+} 
+
+/* || RESET */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+/* || BASE */
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+    font-size: 1.125rem;
+  font-family: "Hanken Grotesk", sans-serif;
+  color: white;
+  background: hsl(210 15% 90%);
+}
+
+button {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 100px;
+  margin-top: 1.2rem;
+}
+
+.summary-box h2 {
+  display: inline-block;
+}
+
+/* || UTILITIES */
+  /* -- Colors */
+.text-accent-red { color: hsl(var(--clr-accent-red)); }
+.text-accent-yellow { color: hsl(var(--clr-accent-yellow)); }
+.text-accent-green { color: hsl(var(--clr-accent-green)); }
+.text-accent-blue { color: hsl(var(--clr-accent-blue)); }
+
+.text-neutral-100 { color: hsl(var(--clr-neutral-100)); }
+.text-neutral-200 { color: hsl(var(--clr-neutral-200)); }
+.text-neutral-300 { color: hsl(var(--clr-neutral-300)); }
+.text-neutral-350 { color: hsl(var(--clr-neutral-350)); }
+.text-neutral-400 { color: hsl(var(--clr-neutral-400)); }
+
+.bg-gradient-1 { 
+background: linear-gradient(hsl(var(--clr-gradient-blue-1a)), 
+hsl(var(--clr-gradient-blue-1b))); 
+}
+
+.bg-gradient-2 { 
+background: linear-gradient(hsl(var(--clr-gradient-blue-2a)), 
+hsl(var(--clr-gradient-blue-2b))); 
+}
+
+.bg-neutral-100 { background: hsl(var(--clr-neutral-100)); }
+.bg-accent-red { background: hsl( var(--clr-accent-red) / .15 ); }
+.bg-accent-yellow { background: hsl( var(--clr-accent-yellow) / .15 ); }
+.bg-accent-green { background: hsl( var(--clr-accent-green) / .15 ); }
+.bg-accent-blue { background: hsl( var(--clr-accent-blue) / .15 ); }
+
+   /* -- Typography */
+.fs-400 { font-size: var(--fs-400); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-800 { font-size: var(--fs-800); }
+
+.fw-500 { font-weight: 500; }
+.fw-700 { font-weight: 700; }
+.fw-800 { font-weight: 800; }
+
+.text-center { text-align: center; }
+
+   /* -- Layout */
+.flow > * + * {
+  margin-top: 1rem;
+}
+
+.flex {
+display: flex;
+gap: var(--gap, 1rem);
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.flex-x-center {
+align-items: center;
+}
+
+.container {
+  margin-inline: auto;
+}
+
+.info-box {
+  padding-inline: 2rem;
+  padding-block: 4rem;
+  min-width: 23rem;
+  max-width: 365px;
+  justify-content: center;
+}
+
+.info-box--small {
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  justify-content: space-between;
+}
+
+.padding-bottom--small {
+  padding-bottom: 0.8rem;
+}
+
+.margin-left--small {
+  margin-left: 0.2rem;
+}
+
+
+/* || COMPONENTS */
+.main {
+  gap: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.total-ranking {
+  display: grid;
+  justify-content: center;
+  padding-block: 2rem;
+  margin-inline: auto;
+  width: 12rem;
+  border-radius: 50%;
+  aspect-ratio: 1;
+}
+
+.results-box {
+  z-index: 1;
+  border-radius: 0 0 40px 40px;
+}
+
+
+
+.summary-box {
+  margin-top: -2rem;
+  padding-top: 3rem;
+}
+
+.button--primary {
+  background: hsl(220 40% 20%);
+  color: hsl(var(--clr-neutral-100));
+}
+
+.button--primary:hover {
+  background: 
+    linear-gradient( hsl(var(--clr-gradient-blue-2a) /.8), hsl(var(--clr-gradient-blue-2b)));
+}
+
+/* || MEDIA QUERIES */
+@media (min-width: 750px) {
+  .main {
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .info-box {
+    border-radius: 50px;
+    padding-block: 2rem;
+    padding-inline: 2.5rem;
+    min-height: 30rem;
+    box-shadow: 5px 8px 10px 2px hsl(210 20% 35% / .3);
+    transition: rotate 400ms ease-in-out;
+  }
+
+  .summary-box {
+    position: relative;
+    margin-top: 0;
+    right: 0.5%;
+  }
+
+  .results-box {
+    position: relative;
+    left: 0.5%;
+  }
+
+.results-box:hover,
+.results-box:focus {
+  transform: rotate(-1deg);
+}
+
+.summary-box:hover,
+.summary-box:focus  {
+  transform: rotate(1deg);
+}
+
+}
